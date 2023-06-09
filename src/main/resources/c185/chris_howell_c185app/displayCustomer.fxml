@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" text="Chris Howell C195 Task 1" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="905.0">
+         <children>
+            <Button fx:id="btn_Filter" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Filter">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="lb_" layoutX="308.0" layoutY="22.0" prefHeight="26.0" prefWidth="64.0" text="Country">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="63.0" text="State/Providence">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="277.0" layoutY="103.0" text="Postal Code">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="560.0" layoutY="22.0" text="Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="552.0" layoutY="63.0" text="Address">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="559.0" layoutY="103.0" text="Phone">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_SaveAsEdit" layoutX="295.0" layoutY="162.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Save As Edit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_SaveAsNew" layoutX="437.0" layoutY="163.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" text="Save As New">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tf_PostalC" layoutX="388.0" layoutY="104.0" />
+            <TextField fx:id="tf_Phone" layoutX="649.0" layoutY="104.0" />
+            <TextField fx:id="tf_Name" layoutX="649.0" layoutY="23.0" />
+            <TextField fx:id="tf_address" layoutX="649.0" layoutY="64.0" />
+            <ComboBox fx:id="cb_Country" layoutX="387.0" layoutY="23.0" prefWidth="150.0" />
+            <ComboBox fx:id="cb_state" layoutX="387.0" layoutY="64.0" prefWidth="150.0" />
+            <TableView fx:id="tv_CustomerList" layoutX="-1.0" layoutY="209.0" prefHeight="566.0" prefWidth="900.0">
+              <columns>
+                <TableColumn fx:id="col_customerId" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="col_customerName" prefWidth="159.0" text="Name" />
+                 <TableColumn fx:id="col_customerAdd" prefWidth="153.0" text="Address" />
+                 <TableColumn fx:id="col_customerPC" prefWidth="100.0" text="Postal Code" />
+                 <TableColumn fx:id="col_customerDiv" prefWidth="158.0" text="Division" />
+                 <TableColumn fx:id="col_customerCountry" prefWidth="148.0" text="Country" />
+                 <TableColumn fx:id="col_customerPhone" prefWidth="139.0" text="Phone Number" />
+              </columns>
+            </TableView>
+            <Label layoutX="38.0" layoutY="22.0" text="Customer ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_custID" layoutX="151.0" layoutY="22.0" text="#">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="bt_Delete" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="161.0" text="Delete Customer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_ResetFilter" layoutX="151.0" layoutY="162.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Reset Filter">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_viewAppointments" layoutX="577.0" layoutY="163.0" mnemonicParsing="false" text="View Appointments">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_viewReports" layoutX="769.0" layoutY="163.0" mnemonicParsing="false" text="View Reports">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
